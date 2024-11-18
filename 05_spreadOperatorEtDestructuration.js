@@ -53,13 +53,23 @@ const [, , , multiply] = calculate(8, 2);
 const person = { name: "Doe", age: 30, city: "New York" };
 const information = { numberPhone: "0615632156", firstName: "John" };
 
+// const personAndInformation = {
+//   ...person,
+//   ...information,
+//   test: "test",
+//   age: 45,
+// };
+
 const personAndInformation = {
-  ...person,
-  ...information,
-  test: "test",
+  name: "Doe",
+  age: 30,
+  city: "New York",
   age: 45,
 };
+const personAndInformation2 = { ...person, age: 45, ...information };
+
 console.log("personAndInformation", personAndInformation);
+console.log("personAndInformation2", personAndInformation2);
 
 // Destructuration sur ls objets
 
